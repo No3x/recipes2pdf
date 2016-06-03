@@ -43,6 +43,7 @@ public class ChefkochParserTest {
         this.ckParser   = new ChefkochParser();
         this.recipe     = new Recipe();
 
+
         this.rawRecipeList.add(ResourceLoader.loadFileContents(this.getClass(), "CK_test_zutaten.html"));
         this.rawRecipeList.add(ResourceLoader.loadFileContents(this.getClass(), "CK_test_1.html"));
         this.rawRecipeList.add(ResourceLoader.loadFileContents(this.getClass(), "CK_test_2.html"));
