@@ -10,12 +10,8 @@ cache:
     - $HOME/.gradle/wrapper
 addons:
   apt:
-    sources:
-    - texlive-fonts-recommended
-    - texlive-latex-extra
-    - texlive-fonts-extra
-    - dvipng
-    - texlive-latex-recommended
+    packages:
+      - texlive
 after_success:
     - bash <(curl -s https://codecov.io/bash)
 install:
