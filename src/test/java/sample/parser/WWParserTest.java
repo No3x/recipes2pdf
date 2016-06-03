@@ -158,7 +158,7 @@ public class WWParserTest {
         the(recipe.getIngredients().get(19).getMiddle()).shouldBeEqual(100);
         the(recipe.getIngredients().get(19).getRight().getName()).shouldBeEqual("g");
     }
-/*
+
     @Test
     public void testRecipe2015Example1() {
         parse(1);
@@ -196,7 +196,7 @@ public class WWParserTest {
         the(recipe.getIngredients().get(6).getMiddle()).shouldBeEqual(100);
         the(recipe.getIngredients().get(6).getRight().getName()).shouldBeEqual("g");
     }
-
+/*
     @Test
     public void testRecipe2015Example2() {
         parse(2);
