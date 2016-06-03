@@ -1,4 +1,4 @@
-﻿package sample.parser;
+package sample.parser;
 
 import org.junit.Before;
 import org.junit.Test;
@@ -16,7 +16,7 @@ import static org.javalite.test.jspec.JSpec.the;
 public class WWParserTest {
 
     private Recipe              recipe;
-    private WWParser            wwParser;
+    private WWParser wwParser;
     private ArrayList<String>   rawRecipeList = new ArrayList<String>();
 
     @Before
