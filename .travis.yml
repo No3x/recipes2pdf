@@ -11,8 +11,11 @@ cache:
 addons:
   apt:
     packages:
-      - texlive
-      - latexmk
+    - texlive-fonts-recommended
+    - texlive-latex-extra
+    - texlive-fonts-extra
+    - dvipng
+    - texlive-latex-recommended
 after_success:
     - bash <(curl -s https://codecov.io/bash)
 install:
