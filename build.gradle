@@ -90,6 +90,9 @@ dependencies {
     compile 'org.controlsfx:controlsfx:8.40.10'
 }
 
+tasks.withType(Compile) {
+    options.encoding = "UTF-8"
+}
 
 idea {
     project {
