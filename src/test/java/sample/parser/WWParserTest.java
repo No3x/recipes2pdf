@@ -69,7 +69,7 @@ public class WWParserTest {
         }
     }
 
-    /*@Test
+    @Test
     public void testRecipe2015IngredientVariantFakeRecipe() {
         parse(0);
         the(recipe.getTitle()).shouldBeEqual("Gegrillte Zucchini mit Feta");
@@ -158,7 +158,7 @@ public class WWParserTest {
         the(recipe.getIngredients().get(19).getMiddle()).shouldBeEqual(100);
         the(recipe.getIngredients().get(19).getRight().getName()).shouldBeEqual("g");
     }
-
+/*
     @Test
     public void testRecipe2015Example1() {
         parse(1);
