@@ -1,4 +1,4 @@
-sudo: required
+sudo: false
 language: java
 jdk:
 - oraclejdk8
@@ -8,8 +8,14 @@ cache:
     - $HOME/.gradle/daemon
     - $HOME/.gradle/native
     - $HOME/.gradle/wrapper
-before_install:
-    - sudo apt-get -qq update && sudo apt-get install -y --no-install-recommends texlive-fonts-recommended texlive-latex-extra texlive-fonts-extra dvipng texlive-latex-recommended
+addons:
+  apt:
+    sources:
+    - texlive-fonts-recommended
+    - texlive-latex-extra
+    - texlive-fonts-extra
+    - dvipng
+    - texlive-latex-recommended
 after_success:
     - bash <(curl -s https://codecov.io/bash)
 install:
